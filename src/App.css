@@ -1,38 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
 .App {
-  text-align: center;
+  width: 90%;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.border-card{
+  border:3px solid red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-card {
+  -webkit-box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon-like {
+  width: 30px;
+  height: 30px;
+  color: #EB547D;
+  margin: 0px 20px 5px 20px;
+}
+
+.icon-dislike {
+  width: 30px;
+  height: 30px;
+  color: #5476B3;
+  margin: 0px 20px 5px 20px;
+}
+
+.font-name {
+  font-family: 'Fredoka One', cursive;
+  font-size: 12pt;
+  color: #2BB19B;
+}
+
+.title-name{
+  color: #EB547D;
+  font-family: 'Fredoka One', cursive;
+}
+
+.font-description{
+  color: #9F6AA7;
+}
+
+.font-card{
+  list-style: none;
+  padding: 0;
+  text-align: justify;
+  font-size: 8pt;
+}
+
+
+.header {
+  box-sizing: border-box;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.animation{
+  width: 100px;
+  height:  100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  /* border: solid 1px black; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.title-hero{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title-and{
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title-villians{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.letter{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40pt;
+  font-weight: 600;
+}
+
+.letter-s{
+  color: #2BB19B;
+}
+
+.letter-u{
+  color: #FBDB4A;
+}
+
+.letter-p{
+  color: #F3934A;
+}
+
+.letter-e{
+  color: #EB547D;
+}
+
+.letter-r{
+  color: #9F6AA7;
+}
+
+.letter-h{
+  color: #5476B3;
+}
+
+.letter-ee{
+  color: #2BB19B;
+}
+
+.letter-rr{
+  color: #FBDB4A;
+}
+
+.letter-o{
+  color: #F3934A;
+}
+
+.letter-ss{
+  color: #EB547D;
+}
+
+.description{
+  list-style: none;
+  font-size: 8pt;
 }

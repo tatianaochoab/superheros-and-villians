@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+// import $ from 'jquery';
+// import Popper from 'popper.js';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+import SuperHero from './components/SuperHero';
+import InternalPage from './components/InternalPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='App'>
+      <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={SuperHero} />
+            <Route exact path='/:id' component={InternalPage} />
+          </Switch>
+      </BrowserRouter>
+    </section>
+    
   );
 }
 
